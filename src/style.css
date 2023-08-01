@@ -1,0 +1,424 @@
+@font-face {
+  font-family: 'Adelle Sans';
+  src:  url('./fonts/AdelleSansEXT-Regular.woff2') format('woff2'),
+        url('./fonts/AdelleSansEXT-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Adelle Thin';
+  src:  url('./fonts/AdelleSansEXT-Thin.woff2') format('woff2'),
+        url('./fonts/AdelleSansEXT-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fraunces SemiBold';
+  src:  url('./fonts/Fraunces_144pt-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Fraunces Light';
+  src:  url('./fonts/Fraunces_144pt-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Oswald ExtraLight';
+  src:  url('./fonts/Oswald-ExtraLight.ttf');
+}
+
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root, .App{
+  font-family: 'Adelle Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root{
+  font-size: 10px;
+  color:  #e8e6e6;
+  background-color: #131313;
+}
+
+a{ 
+  text-decoration: none;
+  color: #e8e6e6;
+}
+
+.container{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+/* //////////////////////////HEADER/////////////////////////////////////////// */
+
+header{
+  position: fixed;
+  width: 100%;
+  background-color: #131313;
+  top: 0;
+  z-index: 5;
+  border-bottom: 1px solid #595959;
+}
+
+header .header-container{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content:flex-end;
+}
+
+.menu ul{
+  list-style: none;
+  display: flex;
+  vertical-align: middle;
+}
+
+.menu ul li{
+  font-size: 2.5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  transition: 1s ease;
+}
+
+header nav ul li a{
+  cursor: pointer;
+  padding: 0 5rem;
+  transition: all .5s ease;
+  text-decoration: none;
+}
+
+header nav ul li a:hover{
+  color: #4e5130;
+}
+
+.mobile{
+  display: none;
+}
+
+.burger{
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  font-size: 4.1vh;
+  align-self: center;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  transition: all 1s ease;
+}
+
+.mobile-menu{
+  position: absolute;
+  z-index: 6;
+  right: 0;
+  top: 100%;
+  background-color: #131313;
+  transition: all 1s ease;
+  white-space: nowrap;
+  border-radius: 0 0 0 2rem;
+}
+
+.mobile-menu ul{
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #595959;
+  border-bottom: 1px solid #595959;
+  border-radius: 0 0 0 2rem;
+}
+
+.mobile-menu li{
+  width: 100%;
+  border-bottom: 1px solid #595959;
+}
+
+.mobile-menu li a{
+  padding: 5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.click-hide{
+  display: none;
+  position: fixed;
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: 5;
+}
+
+/* //////////////////////////LANDING/////////////////////////////////////////// */
+
+.landing{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-image: url("./images/windowBG.jpg");
+  background-position: bottom;
+}
+
+.landing > div{
+  margin: 0 auto;
+  background-color: rgba(19,19,19, 75%);
+  text-align: center;
+}
+
+.landing div > h1{
+  font-family: 'Fraunces SemiBold';
+  font-size: 8rem;
+  text-transform: uppercase;
+  padding: 3rem 10rem;
+  user-select: none;
+}
+
+.landing div > p{
+  font-size: 2rem;
+  padding-bottom:10rem;
+  user-select: none;
+}
+
+/* //////////////////////////PEÇAS/////////////////////////////////////////// */
+
+.posts{
+  margin: 3rem auto 0 auto;
+  text-align: center;
+  cursor: default;
+}
+
+.posts h1{
+  text-transform: uppercase;
+  font-family: 'Fraunces Light';
+  font-weight: normal;
+  font-size: 8rem;
+  padding: 3rem 10rem;
+  user-select: none;
+}
+
+.articles{
+  max-width: 90rem;
+  margin: 7rem auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0 1% 6rem 1%;
+  width: 34.5rem;
+  height: 73.9rem;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #595959;
+  transition: .5s ease;
+}
+
+.article h3{
+  font-size: 4rem;
+  font-family: "Oswald ExtraLight";
+  font-weight: bold;
+  position: relative;
+  transition: .5s ease;
+  margin-bottom: 15rem;
+  max-width: 80%;
+}
+
+.article .background{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('./images/doge.jpg');
+  background-position: center 10%;
+  border-radius: 10px;
+  transition: .5s ease;
+  opacity: .7;
+}
+
+.article:hover .background{
+  opacity: .3;
+}
+
+.article:hover{
+  transform: scale(0.95);
+}
+
+/* //////////////////////////POST/////////////////////////////////////////// */
+
+#posts{
+  position: absolute;
+  top: 95vh;
+}
+
+#topper{
+  position: absolute;
+  top: 0;
+}
+
+.post{
+   cursor: default;
+   margin-bottom: 10rem;
+}
+
+.post img{
+  display: block;
+  margin: 10rem auto;  
+  height: auto;
+  width: 100%;
+  max-width: 128.3rem;
+}
+
+.text{
+  margin: 0 auto;
+  border-bottom: 1px solid #e8e6e6;
+}
+
+.text h1{
+  font-size: 6rem;
+  text-align: center;
+  font-family: Fraunces SemiBold;
+}
+
+.text p{
+  max-width: 75rem;
+  margin: 5rem auto;
+  font-size: 2rem;
+  font-family: "Adelle Thin";
+  text-align: left;
+  white-space: pre-line;  
+  vertical-align: bottom;
+}
+
+/*///////////////////ABOUT///////////////*/
+
+.about > div{
+  display: flex;
+  width: fit-content;
+  background-color: black;
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
+.about .text-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.about .text-container h1{
+  font-family: "Fraunces Light";
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about .text-container p{
+  font-size: 1.7rem;
+  max-width: 70%;
+  text-align: center;
+  text-wrap: balance;
+  line-height: 3rem;
+  word-spacing: .3rem;
+}
+
+.about img{
+  height: 100%;
+  width: 50%;
+}
+
+/*///////////////////CONTACT///////////////*/
+
+.contact > div{
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h1{
+  font-family: "Fraunces Light";
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 4rem;
+  cursor: default;
+}
+
+.contact > div div{
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  word-spacing: .3rem;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+  .landing > div{
+    width: 100%;
+  }
+
+  .articles{
+    justify-content: center;
+ }
+
+  .about > div{
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .about .text-container{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .about img{
+    width: 30%;
+    margin: 0 auto;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .landing div > h1{
+    font-size: 5rem;
+  }
+
+  .mobile-menu li a{
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  h1{
+    font-size: 5rem !important;
+  }
+
+}
