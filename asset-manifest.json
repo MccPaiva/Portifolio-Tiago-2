@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portifolio-tiago-2/static/css/main.4a6fe226.css",
+    "main.js": "/portifolio-tiago-2/static/js/main.9827a2d4.js",
+    "static/media/windowBG.jpg": "/portifolio-tiago-2/static/media/windowBG.e4476f1dcacd232371d9.jpg",
+    "static/media/tiago.jpg": "/portifolio-tiago-2/static/media/tiago.f1ea7d34d5aced81f98e.jpg",
+    "static/media/AdelleSansEXT-Regular.woff": "/portifolio-tiago-2/static/media/AdelleSansEXT-Regular.0a9bcab054a6fd288eda.woff",
+    "static/media/AdelleSansEXT-Thin.woff": "/portifolio-tiago-2/static/media/AdelleSansEXT-Thin.7badc4ff4f012eed17d7.woff",
+    "static/media/AdelleSansEXT-Regular.woff2": "/portifolio-tiago-2/static/media/AdelleSansEXT-Regular.dad97c39ec35a704ce07.woff2",
+    "static/media/AdelleSansEXT-Thin.woff2": "/portifolio-tiago-2/static/media/AdelleSansEXT-Thin.39accd830e07f4e4ad8d.woff2",
+    "static/media/Fraunces_144pt-SemiBold.ttf": "/portifolio-tiago-2/static/media/Fraunces_144pt-SemiBold.9e85f95d66a2244d7bfa.ttf",
+    "static/media/Fraunces_144pt-Light.ttf": "/portifolio-tiago-2/static/media/Fraunces_144pt-Light.09c5d2dd35567f0dfeba.ttf",
+    "static/media/Oswald-ExtraLight.ttf": "/portifolio-tiago-2/static/media/Oswald-ExtraLight.91951892dbc8636d8f73.ttf",
+    "static/media/doge.jpg": "/portifolio-tiago-2/static/media/doge.86b33d3684a9cb392158.jpg",
+    "index.html": "/portifolio-tiago-2/index.html",
+    "main.4a6fe226.css.map": "/portifolio-tiago-2/static/css/main.4a6fe226.css.map",
+    "main.9827a2d4.js.map": "/portifolio-tiago-2/static/js/main.9827a2d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a6fe226.css",
+    "static/js/main.9827a2d4.js"
+  ]
+}
